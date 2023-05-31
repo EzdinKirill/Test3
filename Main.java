@@ -4,6 +4,6 @@ public class Main {
         Stock stock = new Stock("SB", "ПАО", 281.50, 282.87);
 
         // Выводим процент изменения стоимости акций
-        System.out.printf("Процент изменения стоимости акций %s (%s): %.2f%%", stock.getName(), stock.getSymbol(), stock.getChangePercent());
+        System.out.printf("Процент изменения стоимости акций %s (%s): %.2f%%", stock.getName, stock.getSymbol, stock.getChangePercent());
     }
 }
