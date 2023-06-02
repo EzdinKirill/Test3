@@ -1,8 +1,8 @@
 public class Stock {
-    private String symbol; /** Обозначение акций */
-    private String name; /** Наименование акций */
-    private double previousClosingPrice; /** Стоимость акций на момент закрытия предыдущего дня */
-    private double currentPrice; /** Стоимость акций в настоящий момент */
+    public String symbol; /** Обозначение акции */
+    public String name; /** Наименование акции */
+    public double previousClosingPrice; /** Стоимость акции на момент закрытия предыдущего дня */
+    public double currentPrice; /** Стоимость акции в настоящий момент */
         
     /** Конструктор класса Stock */
      public Stock(String symbol, String name, double previousClosingPrice, double currentPrice) {
@@ -13,7 +13,7 @@ public class Stock {
         this.currentPrice = currentPrice;
     }
         
-    /** Метод для получения процентного изменения стоимости акций */
+    /** Метод для получения процентного изменения стоимости акции */
     public double getChangePercent() {
         double percentChange = ((this.currentPrice - this.previousClosingPrice) / this.previousClosingPrice) * 100;
         return Double.parseDouble(String.format("%.2f", percentChange)); /** Возвращаем процентное изменение, округленное до двух десятичных знаков */
