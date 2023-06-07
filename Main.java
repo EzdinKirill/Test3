@@ -17,7 +17,7 @@ public class Main {
     if(choice == 1){
     
     /** Выводим данные об акции */
-    System.out.println("Данные об акции: " + "\nНаименование акции: " + stock.symbol + "\nОбозначение акции: " + stock.name + "\nСтоимость акции на момент закрытия предыдущего дня: " + stock.previousClosingPrice + "\nСтоимость акции в настоящий момент: " + stock.currentPrice);
+    System.out.println("Данные об акции: " + "\nНаименование акции: " + stock.symbol + "\nОбозначение акции: " + stock.name + "\nСтоимость акции на момент закрытия предыдущего дня: " + stock.previousClosingPrice + "\nСтоимость акции в настоящий момент: " + stock.getCurrentPrice());
         
     }
     
